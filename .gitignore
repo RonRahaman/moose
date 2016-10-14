@@ -171,5 +171,8 @@ out.xyz
 docs/.moosedocs
 site
 
+#JetBrains IDE project data
+.idea/*
+
 # Do not ignore files in docs/media
 !docs/media/*.png
