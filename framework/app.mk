@@ -317,7 +317,8 @@ endif
 # for more explanations/details.
 compilertype := unknown
 applibs :=  $(app_test_LIB) $(app_LIBS)
-ifeq ($(libmesh_static),yes)
+#ifeq ($(libmesh_static),yes)
+ifeq ($(libmesh_shared),no)
   ifneq (,$(findstring clang,$(CXX)))
     compilertype := clang
   else

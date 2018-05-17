@@ -878,6 +878,7 @@ InputParameters::rangeCheck(const std::string & full_name,
                             std::ostream & oss)
 {
   mooseAssert(param, "Parameter is NULL");
+  return;
 
   if (!isParamValid(short_name) || _params[short_name]._range_function.empty())
     return;
@@ -991,6 +992,7 @@ InputParameters::rangeCheck(const std::string & full_name,
                             std::ostream & oss)
 {
   mooseAssert(param, "Parameter is NULL");
+  return;
 
   if (!isParamValid(short_name) || _params[short_name]._range_function.empty())
     return;
